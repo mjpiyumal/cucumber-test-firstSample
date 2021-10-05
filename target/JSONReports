@@ -1,89 +1,84 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-10-05T05:15:54.666Z",
-        "line": 5,
-        "name": "Check login is successful with valid credentials",
+        "start_timestamp": "2021-10-05T06:14:28.335Z",
+        "line": 3,
+        "name": "Validate google search is working",
         "description": "",
-        "id": "feature-to-test-login-functionality;check-login-is-successful-with-valid-credentials",
+        "id": "feature-to-test-google-search-functionality;validate-google-search-is-working",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3990400,
+              "duration": 2305406900,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user is on login page",
+            "line": 5,
+            "name": "browser is open",
             "match": {
-              "location": "stepDefinitions.LoginSteps.user_is_on_login_page()"
+              "location": "stepDefinitions.GoogleSearch.browser_is_open()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 997600,
+              "duration": 4368205700,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user enters username and password",
+            "line": 6,
+            "name": "user is on google search page",
             "match": {
-              "location": "stepDefinitions.LoginSteps.user_enters_username_and_password()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 998000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "clicks on login button",
-            "match": {
-              "location": "stepDefinitions.LoginSteps.clicks_on_login_button()"
+              "location": "stepDefinitions.GoogleSearch.user_is_on_google_search_page()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 997200,
+              "duration": 2074631300,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user is navigate to the login page",
+            "line": 7,
+            "name": "user enters a text in search box",
             "match": {
-              "location": "stepDefinitions.LoginSteps.user_is_navigate_to_the_login_page()"
+              "location": "stepDefinitions.GoogleSearch.user_enters_a_text_in_search_box()"
             },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@SmokeFeature"
+            "keyword": "When "
           },
           {
-            "name": "@smoketest"
+            "result": {
+              "duration": 2787242100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "his enter",
+            "match": {
+              "location": "stepDefinitions.GoogleSearch.his_enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3695035700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to search result",
+            "match": {
+              "location": "stepDefinitions.GoogleSearch.user_is_navigated_to_search_result()"
+            },
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "feature to test login functionality",
+    "name": "feature to test google search functionality",
     "description": "",
-    "id": "feature-to-test-login-functionality",
+    "id": "feature-to-test-google-search-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
-    "tags": [
-      {
-        "name": "@SmokeFeature",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/googleSearch.feature",
+    "tags": []
   }
 ]
